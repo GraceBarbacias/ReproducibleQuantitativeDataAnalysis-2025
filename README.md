@@ -1,11 +1,8 @@
 # ReproducibleQuantitativeDataScience
 
-A course prepared by Dr Melanie Ganz and Dr Cyril Pernet, with amazing guests: Dr Robert Oostenveld (RO), Dr Michael Hanke (MH) and Dr Nikola Stikov (NS).
-The course structure is over 5 days plus personal work: 2 days, course work, 2 days, course work, and 1 day with presentations.
+A course prepared by Dr Melanie Ganz and Dr Cyril Pernet, with amazing guests: Dr Robert Oostenveld (RO), Dr Michael Hanke (MH), Dr Nikola Stikov (NS) and Prof Russ Poldrack. The course structure is over 5 days plus personal work: 2 days, course work, 2 days, course work, and 1 day with presentations.
 
-**For teachers**: We expect students to join the course several months after starting their PhD allowing them to already have data and some code. This will allow them to apply the concepts developed to their own data and code. It is also expected to have a platform to interact with students via a 'wall' with notes. 
-
-**For students**: During the course, active participation is expected. In session 1, we'll use [padlet](https://padlet.com/dashboard) to interact with each other (anonymous posting allowed) and also do group work. In session 2, we use GitHub (that you learn in session 1) to share code and review each other code. It is recommended to share something you are working on, but if you feel uncomfortable with that, prepare something to be shared/reviewed. In session 3, you must present in front of everybody. While it may feel uncomfortable, it is expected from any PhD student to be able to do so, and not just for this course. In general, there are no rights and wrongs in trying to improve reproducibility, it is only expected that you try given the conceptual and practical tools presented.
+During the course, active participation is expected. In session 1, we'll use [padlet](https://padlet.com/dashboard) to interact with each other (anonymous posting allowed) and also do group work. In session 2, we use GitHub (that you learn in session 1) to share code and review each other code. It is recommended to share something you are working on, but if you feel uncomfortable with that, prepare something to be shared/reviewed. In session 3, you must present in front of everybody. While it may feel uncomfortable, it is expected from any PhD student to be able to do so, and not just for this course. In general, there are no rights and wrongs in trying to improve reproducibility, it is only expected that you try given the conceptual and practical tools presented.
 
 ## Part 1
 
@@ -35,20 +32,23 @@ Submit your coursework via e-mail to Cyril and Melanie.
 
 - Programming
 - Good coding practices
-- An introduction to computational analysis methods: permutation, bootstrap, cross-validation, out-of-sample generalization  
-- Time to update your code - push code here, review each other work, present, discuss with teachers  
+- An introduction to computational analysis methods: permutation, bootstrap, cross-validation, out-of-sample generalization
+- Test-driven AI coding: https://github.com/poldrack/ai_testing#
 
 ### Day 4 - Better analyses 
 
+- Feedback on coursework and discuss further issues to make your PhD reproducible and next assignment
 - P-hacking
 - Understanding p-values 
-- Feedback on coursework and discuss further issues to make your PhD reproducible  
 - Computational reproducibility
 
 Please prepare before the course:
-  - [install docker on your own machine](https://docs.docker.com/engine/install/) so you can use a container and then build a container.
-  - We will reproduce a full paper, to safe download time during the practical, please download the two files at https://datapub.fz-juelich.de/studyforrest/remodnav/docker-layers beforehand
-  - [install DataLad on your own machine](https://handbook.datalad.org/r?install) to be able to execute all steps to reproduce the paper, and to be able to make your own reproducible in the same way
+- [Installing UV](https://docs.astral.sh/uv/getting-started/installation/#installation-methods) 
+- Install the gitannex typing in a terminal ``uv tool install git-annex`` and then ``uv tool install datalad --with datalad-next --with datalad-container`` (or if datalad was installed ``uv tool upgrade datalad --with datalad-next --with datalad-container``). Finally make sure to activate a uv-based DataLad installation: on Mac/Linux: ``source $(uv tool dir)/datalad/bin/activate``, on Windows (cmd.exe) ``AppData\Roaming\uv\tools\datalad\Scripts\activate.bat``. Further checking and instructions can also be found [here](https://slides.edu.datalad.org/modules/installation.html#/).
+- You should already have VSCode from the last session; otherwise, [install it](https://code.visualstudio.com/docs/copilot/setup) **with Copilot AI**.
+- Clone this repository: git clone https://github.com/poldrack/ai_testing.git and run uv sync with repo directory
+- [install docker on your own machine](https://docs.docker.com/engine/install/) so you can use a container and then build a container.
+
 
 ### Course work 
 
